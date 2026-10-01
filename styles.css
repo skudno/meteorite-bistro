@@ -14,4 +14,5 @@
 @media(max-width:650px){.hero-image{width:100%;height:75%;object-fit:contain;object-position:center top}.hero-shade{background:linear-gradient(0deg,#25221d 0%,rgba(37,34,29,.9) 21%,rgba(14,13,12,.05) 70%)}}
 footer{column-gap:4rem}
 @media(max-width:650px){footer{row-gap:2.5rem;padding-bottom:5.5rem}footer>span:nth-child(2){max-width:16rem;line-height:1.5}}
-.interlude span{animation-duration:22s}
+.interlude span{animation-duration:15s}
+.gallery-track{animation-duration:79s}
