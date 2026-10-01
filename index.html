@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b1a18">
+  <meta name="description" content="METEORITE bistro x store — бистро и концепт-стор на Покровке, 20/1с1. Завтраки, выпечка, ужины и вино.">
+  <title>METEORITE — бистро на Покровке</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hero.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#about">К содержимому</a>
+
+  <div class="arrival" id="arrival" aria-hidden="true">
+    <span class="arrival-index">МОСКВА · ПОКРОВКА, 20/1с1</span>
+    <div class="arrival-center"><span class="arrival-mark">METEORITE</span><span class="arrival-small">BISTRO × STORE</span></div>
+    <span class="arrival-bottom">ЛИСТАЙТЕ НИЖЕ <span aria-hidden="true">↓</span></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Метеорит — на главную">METEORITE</a>
+    <nav aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-book" href="tel:+79264890220">Забронировать стол</a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero.jpg" alt="Вечерний вход в бистро Meteorite на Покровке" width="1280" height="853">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow eyebrow-light">БИСТРО × КОНЦЕПТ-СТОР · ПОКРОВКА</p>
+        <h1 id="hero-title">Вкус к жизни<br><em>здесь и сейчас.</em></h1>
+        <div class="hero-bottom"><p>Завтраки / пекарня / ужины / вино</p><a class="round-link" href="#about" aria-label="Узнать о нас"><span aria-hidden="true">↓</span></a></div>
+      </div>
+      <span class="hero-side">METEORITE / MOSCOW / 01</span>
+    </section>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="section-top"><span class="section-no">01 / О НАС</span><span class="section-rule"></span><span class="section-note">ПОКРОВКА, 20/1с1</span></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 id="about-title">Место, где<br>хочется <em>быть.</em></h2>
+          <p>METEORITE bistro x store — камерное бистро и концепт-стор в Москве. Утром здесь встречают кофе и свежей выпечкой, вечером — вином и разговорами у барной стойки.</p>
+          <p class="about-quote">«Мы за честную кухню, за настоящую атмосферу, за эстетику повседневности».</p>
+          <div class="tags" aria-label="Особенности"><span>Можно с собакой</span><span>Кофе с собой</span><span>Еда навынос</span></div>
+        </div>
+        <figure class="about-photo"><img src="assets/about.jpg" alt="Столик в бистро Meteorite" loading="lazy"><figcaption>КОФЕ. РАЗГОВОРЫ. ДЕТАЛИ.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="interlude" aria-label="Атмосфера Meteorite"><span>УТРО&nbsp; / &nbsp;ДЕНЬ&nbsp; / &nbsp;ВЕЧЕР&nbsp; / &nbsp;METEORITE&nbsp; ✦ &nbsp;</span></section>
+
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+      <div class="section-top"><span class="section-no">02 / МЕНЮ</span><span class="section-rule"></span><span class="section-note">ВЫБРАННОЕ ИЗ МЕНЮ</span></div>
+      <div class="menu-heading"><h2 id="menu-title">Что <em>попробовать?</em></h2><p>Завтраки, выпечка, обеды и ужины. Ниже — позиции, опубликованные представителем бистро в Яндекс.Картах.</p></div>
+      <div class="menu-layout">
+        <div class="menu-visual"><img src="assets/gallery-04.jpg" alt="Блюдо и кофе в бистро Meteorite" loading="lazy"><div class="menu-stamp">METEORITE<br><small>BISTRO × STORE</small></div></div>
+        <div class="menu-panel">
+          <div class="menu-tabs" role="tablist" aria-label="Разделы меню"><button type="button" role="tab" id="tab-dinner" aria-controls="panel-dinner" aria-selected="true">Обеды и ужины</button><button type="button" role="tab" id="tab-appetizers" aria-controls="panel-appetizers" aria-selected="false" tabindex="-1">Аперитивы</button></div>
+          <div class="menu-list" role="tabpanel" id="panel-dinner" aria-labelledby="tab-dinner">
+            <div class="menu-item"><span>Сливочная уха</span><strong>780 ₽</strong></div>
+            <div class="menu-item"><span>Утиная нога конфи с картофельным пюре</span><strong>1 360 ₽</strong></div>
+            <div class="menu-item"><span>Куриный шницель с медово-горчичным соусом</span><strong>980 ₽</strong></div>
+            <div class="menu-item"><span>Треска в белом вине с белой фасолью и вешенками</span><strong>1 280 ₽</strong></div>
+            <div class="menu-item"><span>Феттучини с креветками</span><strong>890 ₽</strong></div>
+            <div class="menu-item"><span>Ризотто с гребешком в белом вине</span><strong>1 090 ₽</strong></div>
+          </div>
+          <div class="menu-list" role="tabpanel" id="panel-appetizers" aria-labelledby="tab-appetizers" hidden>
+            <div class="menu-item"><span>Картофель фри с муссом из пармезана и чёрным перцем</span><strong>650 ₽</strong></div>
+            <div class="menu-item"><span>Тар-тар</span><strong>1 190 ₽</strong></div>
+            <div class="menu-item"><span>Оливки</span><strong>820 ₽</strong></div>
+            <div class="menu-item"><span>Мясная тарелка</span><strong>570 ₽</strong></div>
+            <div class="menu-item"><span>Рыбный рийет</span><strong>620 ₽</strong></div>
+            <div class="menu-item"><span>Буррата со свежей клубникой и салатом</span><strong>690 ₽</strong></div>
+          </div>
+          <p class="menu-caveat">Меню в Яндекс.Картах давно не обновлялось. Наличие и цены уточняйте при бронировании.</p>
+          <a class="text-link" href="tel:+79264890220">Позвонить в METEORITE <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-pad gallery-head"><div class="section-top"><span class="section-no">03 / ГАЛЕРЕЯ</span><span class="section-rule"></span><span class="section-note">ФРАГМЕНТЫ ДНЯ</span></div><h2 id="gallery-title">В деталях —<br><em>всё.</em></h2><p>Листайте кадры. Нажмите на фотографию, чтобы рассмотреть её ближе.</p></div>
+      <div class="gallery-viewport" aria-label="Фотогалерея Meteorite"><div class="gallery-track" id="gallery-track"></div></div>
+      <div class="gallery-foot section-pad"><span>METEORITE / ПОКРОВКА</span><span>01 — 16</span></div>
+    </section>
+
+    <section class="contacts section-pad" id="contacts" aria-labelledby="contacts-title">
+      <div class="section-top"><span class="section-no">04 / КОНТАКТЫ</span><span class="section-rule"></span><span class="section-note">ДО ВСТРЕЧИ</span></div>
+      <div class="contacts-grid"><div><h2 id="contacts-title">Встретимся<br>на <em>Покровке.</em></h2><a class="contact-phone" href="tel:+79264890220">+7 (926) 489-02-20</a><p>Позвоните, чтобы забронировать стол.</p></div><div class="contact-details"><div><span>АДРЕС</span><p>Москва, улица Покровка, 20/1с1</p><a href="https://yandex.com/maps/org/meteorit/217545735013/" target="_blank" rel="noopener noreferrer">Открыть в Яндекс.Картах ↗</a></div><div><span>ВРЕМЯ РАБОТЫ</span><p>Вс–чт: 09:00–23:00<br>Пт–сб: 09:00–00:00</p></div><div><span>СЛЕДИТЕ ЗА НОВОСТЯМИ</span><p><a href="https://t.me/meteorite_bistro" target="_blank" rel="noopener noreferrer">Telegram ↗</a><a href="https://www.instagram.com/meteorite.bistro/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></p></div></div></div>
+    </section>
+  </main>
+
+  <footer><span>METEORITE</span><span>НЕОФИЦИАЛЬНЫЙ МАКЕТ · ПОКРОВКА, 20/1с1</span><a href="#home">НАВЕРХ ↑</a></footer>
+  <button class="back-top" type="button" aria-label="Наверх">↑</button>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографий" hidden><button class="lightbox-close" type="button" aria-label="Закрыть">×</button><button class="lightbox-prev" type="button" aria-label="Предыдущая фотография">‹</button><div class="lightbox-stage"><button class="lightbox-neighbor" data-offset="-1" type="button" aria-label="Предыдущая фотография"><img alt=""></button><figure class="lightbox-current"><img alt=""><figcaption></figcaption></figure><button class="lightbox-neighbor" data-offset="1" type="button" aria-label="Следующая фотография"><img alt=""></button></div><button class="lightbox-next" type="button" aria-label="Следующая фотография">›</button></div>
+</body>
+</html>
