@@ -22,7 +22,7 @@ tabs.forEach((tab, index) => {
 });
 function activateTab(index) { tabs.forEach((tab, i) => { const selected = i === index; tab.setAttribute('aria-selected', String(selected)); tab.tabIndex = selected ? 0 : -1; document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected; }); }
 
-const gallery = Array.from({length:16}, (_,i) => ({src:`assets/gallery-${String(i+1).padStart(2,'0')}.jpg`,alt:`Фотография бистро Meteorite, кадр ${String(i+1).padStart(2,'0')}`}));
+const gallery = Array.from({length:15}, (_,i) => ({src:`assets/gallery-${String(i+1).padStart(2,'0')}.jpg`,alt:`Фотография бистро Meteorite, кадр ${String(i+1).padStart(2,'0')}`}));
 const track = document.getElementById('gallery-track');
 for(let copy=0;copy<2;copy++) gallery.forEach((item,index) => { const button=document.createElement('button'); button.type='button'; button.className='gallery-tile'; button.setAttribute('aria-label',`Открыть фотографию ${index+1} из ${gallery.length}`); const img=document.createElement('img'); img.src=item.src; img.alt=item.alt; img.loading='lazy'; button.append(img); button.addEventListener('click',()=>openLightbox(index)); track.append(button); });
 const box=document.getElementById('lightbox');
